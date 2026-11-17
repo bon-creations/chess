@@ -379,9 +379,7 @@ html, body { touch-action: manipulation; }
 }
 @media (max-width: 480px) and (max-height: 640px) { .tools .tool { min-height: 38px; } }
 
-/* ---- BON PIECES（BONモードのクリア特典）: ボンの色をそのまま使い、陣営は縁の光り方と明るさで区別する ---- */
-.piece.art.bon.pc-w img { filter: brightness(1.05) saturate(1.05) drop-shadow(0 0 1px #fffdf2) drop-shadow(0 0 1px #fffdf2) drop-shadow(0 0 3px rgba(255,226,140,.95)) drop-shadow(0 1px 2px rgba(0,0,0,.6)); }
-.piece.art.bon.pc-b img { filter: brightness(.68) saturate(.95) contrast(1.12) drop-shadow(0 0 1px #14090a) drop-shadow(0 0 1px #14090a) drop-shadow(0 0 3px rgba(224,85,63,.9)) drop-shadow(0 1px 2px rgba(0,0,0,.6)); }
+/* ---- BON PIECES：白駒・黒駒は通常の駒と同じ白黒フィルターを使う（ボンの色は残さない） ---- */
 .bon-list { display: flex; flex-direction: column; gap: 8px; margin: 6px 0 12px; }
 .bon-card { display: flex; align-items: center; gap: 12px; padding: 8px 12px; border: 1px solid var(--gold); border-radius: 12px; background: rgba(40,26,14,.85); text-align: left; width: 100%; }
 .bon-card.locked { opacity: .5; }
